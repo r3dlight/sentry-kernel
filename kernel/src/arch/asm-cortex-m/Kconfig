@@ -9,6 +9,8 @@ config ARCH_ARM_ARMV7M
 	bool
 	select HAS_NVIC
 	select THUMB
+	select HAS_MPU
+	select HAS_MPU_PMSA_V7
 	select HAS_DWT
 
 config ARCH_ARM_ARMV7EM
@@ -217,6 +219,7 @@ config SOC_SUBFAMILY_STM32H7
 	select HAS_ITCM
 	select HAS_DTCM
 	select HAS_FPU
+	select HAS_MPU
 	select HAS_FPU_VFPV4
 
 config SOC_SUBFAMILY_STM32H743_ZiTx

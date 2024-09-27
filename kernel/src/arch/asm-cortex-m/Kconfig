@@ -216,6 +216,8 @@ config SOC_SUBFAMILY_STM32H7
 	select HAS_ICACHE
 	select HAS_ITCM
 	select HAS_DTCM
+	select HAS_FPU
+	select HAS_FPU_VFPV4
 
 config SOC_SUBFAMILY_STM32H743_ZiTx
 	bool
